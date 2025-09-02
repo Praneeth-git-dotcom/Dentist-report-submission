@@ -40,3 +40,31 @@ This project demonstrates **authentication, role-based access, database manageme
 
 ## 📂 Project Structure
 
+oralvis-healthcare/
+│── forntend/ # React frontend
+│ ├── src/ # Components, pages, routes
+│ └── ...
+│──  backend/ # Express backend
+│ ├── index.js # Entry point
+│ ├── db.sqlite # SQLite database file
+│ └── ...
+└── README.md
+
+
+---
+
+## 🔑 Default Credentials
+
+| Role        | Email              | Password   |
+|-------------|--------------------|------------|
+| Technician  | tech@oralvis.com   | password123 |
+| Dentist     | dentist@oralvis.com| password123 |
+
+---
+
+## ▶️ Run Locally
+
+### 1. Clone Repository
+```bash
+git clone https://github.com/<your-username>/<your-repo>.git
+cd oralvis-healthcare
