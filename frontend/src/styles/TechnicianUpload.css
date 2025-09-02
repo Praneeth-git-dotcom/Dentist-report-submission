@@ -1,0 +1,100 @@
+/* Center the form in the screen */
+.upload-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f3f4f6; /* subtle gray background */
+  padding: 1rem;
+  font-family: "Inter", "Helvetica", "Arial", sans-serif;
+}
+
+/* Card style */
+.upload-card {
+  background-color: #ffffff;
+  border-radius: 2rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: all 0.3s ease;
+}
+
+/* Card heading */
+.upload-card h2 {
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.upload-card p.description {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+/* Input fields */
+.upload-card input[type="text"],
+.upload-card input[type="file"] {
+  border: 1px solid #d1d5db;
+  border-radius: 1rem;
+  padding: 0.75rem 1rem;
+  font-size: 0.95rem;
+  width: 100%;
+  transition: all 0.2s ease-in-out;
+}
+
+.upload-card input[type="text"]:focus,
+.upload-card input[type="file"]:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+/* File input dashed style */
+.upload-card input[type="file"] {
+  border: 2px dashed #d1d5db;
+  cursor: pointer;
+  text-align: center;
+  color: #6b7280;
+}
+
+.upload-card input[type="file"]:hover {
+  border-color: #3b82f6;
+  color: #111827;
+}
+
+/* Upload button */
+.upload-card button {
+  background-color: #3b82f6;
+  color: white;
+  font-weight: 600;
+  padding: 0.75rem;
+  border-radius: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.upload-card button:hover {
+  background-color: #2563eb;
+}
+
+/* Status messages */
+.upload-card .status {
+  text-align: center;
+  font-size: 0.875rem;
+  color: #374151;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .upload-card {
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+  }
+}
